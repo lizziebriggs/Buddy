@@ -359,7 +359,18 @@ void DrawSadFace()
 
 void DrawNeutralFace()
 {
-  
+    int yellowLED[] = {2, 5, 10, 13, 18, 21, 49, 50, 51, 52, 53, 54};
+    
+    for(uint16_t i = 0; i < LedMatrixRGB.numPixels(); i++)
+    {
+        if(IsInArray(i, yellowLED[])
+            SetYellow(i);
+            
+        else
+            SetWhite(i);
+    }
+    
+    LedMatrixRBG.show();
 }
 
 
