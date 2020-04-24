@@ -302,17 +302,17 @@ void ReceiveData()
     {
       // L indicates light
       case 'L':
-        // Calculate and set min and max value recieved
+        // Calculate and set min and max value received
         break;
 
       // W indicates moisture (water)
       case 'W':
-        // Calculate and set min and max value recieved
+        // Calculate and set min and max value received
         break;
         
       // T indicates temperature
       case 'T':
-        // Calculate and set min and max value recieved
+        // Calculate and set min and max value received
         break;
         
       // M indicates motor
