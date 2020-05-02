@@ -13,9 +13,22 @@ MonoBehaviour:
   m_Name: Aloe Vera
   m_EditorClassIdentifier: 
   plantName: Aloe Vera
-  recTempMin: 0
-  recTempMax: 0
-  recWaterMin: 0
-  recWaterMax: 0
-  recLightMin: 0
-  recLightMax: 0
+  recTempMin: 15
+  recTempMax: 25
+  recWaterMin: 5
+  recWaterMax: 10
+  recLightMin: 30
+  recLightMax: 60
+  image: {fileID: 0}
+  about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque
+    auctor eleifend. Curabitur tristique ante eu enim vestibulum aliquam. Etiam aliquet,
+    velit ac ultricies tempor, tortor odio imperdiet ex, vitae varius nulla sapien
+    sed odio.
+  howToCare: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque
+    auctor eleifend. Curabitur tristique ante eu enim vestibulum aliquam. Etiam aliquet,
+    velit ac ultricies tempor, tortor odio imperdiet ex, vitae varius nulla sapien
+    sed odio.
+  family: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque
+    auctor eleifend. Curabitur tristique ante eu enim vestibulum aliquam. Etiam aliquet,
+    velit ac ultricies tempor, tortor odio imperdiet ex, vitae varius nulla sapien
+    sed odio.

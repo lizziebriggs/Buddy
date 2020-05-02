@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03f63b9e98d1a74585a3bb7a944f927, type: 3}
+  m_Name: Cactus
+  m_EditorClassIdentifier: 
+  plantName: Cactus
+  recTempMin: 25
+  recTempMax: 40
+  recWaterMin: 3
+  recWaterMax: 7
+  recLightMin: 30
+  recLightMax: 70
+  image: {fileID: 0}
+  about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque
+    auctor eleifend. Curabitur tristique ante eu enim vestibulum aliquam. Etiam aliquet,
+    velit ac ultricies tempor, tortor odio imperdiet ex, vitae varius nulla sapien
+    sed odio.
+  howToCare: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque
+    auctor eleifend. Curabitur tristique ante eu enim vestibulum aliquam. Etiam aliquet,
+    velit ac ultricies tempor, tortor odio imperdiet ex, vitae varius nulla sapien
+    sed odio.
+  family: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque
+    auctor eleifend. Curabitur tristique ante eu enim vestibulum aliquam. Etiam aliquet,
+    velit ac ultricies tempor, tortor odio imperdiet ex, vitae varius nulla sapien
+    sed odio.
