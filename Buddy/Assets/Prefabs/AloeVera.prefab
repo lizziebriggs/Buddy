@@ -276,15 +276,18 @@ MonoBehaviour:
   appManager: {fileID: 0}
   listIndex: 0
   condition: 0
-  currentTemp: 0.4
-  currentWater: 0.6
-  currentLight: 0.75
-  plantType: {fileID: 0}
+  currentTemp: 12
+  currentWater: 6
+  currentLight: 50
+  tempMin: 0
+  tempMax: 0
+  waterMin: 0
+  waterMax: 0
+  lightMin: 0
+  lightMax: 0
+  plantType: {fileID: 11400000, guid: 69cf12119fcbd2742b3bbb815d942ca1, type: 2}
   plantImage: {fileID: 3002862143130476785}
   plantLEDScreen: {fileID: 3002862142912706933}
-  tempSlider: {fileID: 0}
-  waterSlider: {fileID: 0}
-  lightSlider: {fileID: 0}
   plantConditions:
   - {fileID: 21300000, guid: 70ee16437663862478a744f7540de2e5, type: 3}
   LEDScreens:

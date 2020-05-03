@@ -59,7 +59,7 @@ public class AppManager : MonoBehaviour
 
     void Update()
     {
-
+        SetSliderValues();
     }
 
 
@@ -71,18 +71,47 @@ public class AppManager : MonoBehaviour
         plantToDisplay.sprite = currentPlant.plantImage.sprite;
         LEDToDisplay.sprite = currentPlant.plantLEDScreen.sprite;
 
-        tempSlider.value = currentPlant.currentTemp;
-        waterSlider.value = currentPlant.currentWater;
-        lightSlider.value = currentPlant.currentLight;
-
-        tempMin.text = currentPlant.tempMin.ToString(); tempMax.text = currentPlant.tempMax.ToString();
-        waterMin.text = currentPlant.waterMin.ToString(); waterMax.text = currentPlant.waterMax.ToString();
-        lightMin.text = currentPlant.lightMin.ToString(); lightMax.text = currentPlant.lightMax.ToString();
+        DisplaySettingsValues();
+        SetSliderMinMax();
 
         infoNameToDisplay.text = currentPlant.plantType.plantName;
         infoContent.text = "About\n" + currentPlant.plantType.about + "\n\nHow To Care\n" + currentPlant.plantType.howToCare + "\n\nFamily\n" + currentPlant.plantType.family;
 
         calNameToDisplay.text = currentPlant.plantType.plantName;
+    }
+
+    // Displays current condition of plant on sliders
+    private void SetSliderValues()
+    {
+        tempSlider.value = currentPlant.currentTemp;
+        waterSlider.value = currentPlant.currentWater;
+        lightSlider.value = currentPlant.currentLight;
+    }
+
+    // Sets new thresholds to check for conditions
+    private void SetSliderMinMax()
+    {
+        tempSlider.minValue = currentPlant.tempMin; tempSlider.maxValue = currentPlant.tempMax;
+        waterSlider.minValue = currentPlant.waterMin; waterSlider.maxValue = currentPlant.waterMax;
+        lightSlider.minValue = currentPlant.lightMin; lightSlider.maxValue = currentPlant.lightMax;
+    }
+
+    // Resets condition threshold to recommended
+    public void ResetValues()
+    {
+        currentPlant.tempMin = currentPlant.plantType.recTempMin; currentPlant.tempMax = currentPlant.plantType.recTempMax;
+        currentPlant.waterMin = currentPlant.plantType.recWaterMin; currentPlant.waterMax = currentPlant.plantType.recWaterMax;
+        currentPlant.lightMin = currentPlant.plantType.recLightMin; currentPlant.lightMax = currentPlant.plantType.recLightMax;
+
+        DisplaySettingsValues();
+    }
+
+    // Display values in settings
+    private void DisplaySettingsValues()
+    {
+        tempMin.text = currentPlant.tempMin.ToString(); tempMax.text = currentPlant.tempMax.ToString();
+        waterMin.text = currentPlant.waterMin.ToString(); waterMax.text = currentPlant.waterMax.ToString();
+        lightMin.text = currentPlant.lightMin.ToString(); lightMax.text = currentPlant.lightMax.ToString();
     }
 
     public void DisplayError(string errorMessage)

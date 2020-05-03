@@ -49,7 +49,7 @@ public class SetSlider : MonoBehaviour
     {
         try
         {
-            float newValue = float.Parse(minInput.text);
+            float newValue = float.Parse(maxInput.text);
 
             if (newValue <= currentMin)
             {

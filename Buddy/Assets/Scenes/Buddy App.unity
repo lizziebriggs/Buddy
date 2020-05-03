@@ -1855,7 +1855,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1643796440}
-        m_MethodName: SetMin
+        m_MethodName: SetMax
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3000,7 +3000,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 594773729}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 96925904}
+        m_MethodName: ResetValues
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &594773729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3738,7 +3749,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3844,7 +3855,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -6062,7 +6073,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -8266,37 +8277,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3002862143295406529, guid: 632bec82337d40c4e82f22a18029b453,
-        type: 3}
-      propertyPath: tempSlider
-      value: 
-      objectReference: {fileID: 877207272}
-    - target: {fileID: 3002862143295406529, guid: 632bec82337d40c4e82f22a18029b453,
-        type: 3}
-      propertyPath: waterSlider
-      value: 
-      objectReference: {fileID: 1643796441}
-    - target: {fileID: 3002862143295406529, guid: 632bec82337d40c4e82f22a18029b453,
-        type: 3}
-      propertyPath: lightSlider
-      value: 
-      objectReference: {fileID: 818960256}
-    - target: {fileID: 3002862143295406529, guid: 632bec82337d40c4e82f22a18029b453,
-        type: 3}
-      propertyPath: currentTemp
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3002862143295406529, guid: 632bec82337d40c4e82f22a18029b453,
-        type: 3}
-      propertyPath: currentLight
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3002862143295406529, guid: 632bec82337d40c4e82f22a18029b453,
-        type: 3}
-      propertyPath: plantType
-      value: 
-      objectReference: {fileID: 11400000, guid: 69cf12119fcbd2742b3bbb815d942ca1,
-        type: 2}
     - target: {fileID: 3002862143295406530, guid: 632bec82337d40c4e82f22a18029b453,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -8326,37 +8306,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus
       objectReference: {fileID: 0}
-    - target: {fileID: 6173828934726511000, guid: e59dcda9b5184474fac08cc2a61e7888,
-        type: 3}
-      propertyPath: tempSlider
-      value: 
-      objectReference: {fileID: 877207272}
-    - target: {fileID: 6173828934726511000, guid: e59dcda9b5184474fac08cc2a61e7888,
-        type: 3}
-      propertyPath: waterSlider
-      value: 
-      objectReference: {fileID: 1643796441}
-    - target: {fileID: 6173828934726511000, guid: e59dcda9b5184474fac08cc2a61e7888,
-        type: 3}
-      propertyPath: lightSlider
-      value: 
-      objectReference: {fileID: 818960256}
-    - target: {fileID: 6173828934726511000, guid: e59dcda9b5184474fac08cc2a61e7888,
-        type: 3}
-      propertyPath: currentTemp
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6173828934726511000, guid: e59dcda9b5184474fac08cc2a61e7888,
-        type: 3}
-      propertyPath: currentLight
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6173828934726511000, guid: e59dcda9b5184474fac08cc2a61e7888,
-        type: 3}
-      propertyPath: plantType
-      value: 
-      objectReference: {fileID: 11400000, guid: c07c684eb2af55f4f9cb48bf72e2c9be,
-        type: 2}
     - target: {fileID: 6173828934726511001, guid: e59dcda9b5184474fac08cc2a61e7888,
         type: 3}
       propertyPath: m_LocalPosition.x
